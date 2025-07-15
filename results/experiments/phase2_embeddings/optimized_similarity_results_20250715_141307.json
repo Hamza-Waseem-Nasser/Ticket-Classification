@@ -1,0 +1,280 @@
+{
+  "model_name": "AIDA-UPM/mstsb-paraphrase-multilingual-mpnet-base-v2",
+  "approach": "optimized_deduplicated",
+  "test_queries": [
+    "عندي مشكلة في تسجيل الدخول - login problem",
+    "لا أستطيع الحصول على الشهادة - certificate not available",
+    "مشكلة في اضافة منتج جديد - cannot add new product",
+    "رفض الطلب - application rejected",
+    "مشكلة في الدفع - payment issue"
+  ],
+  "results": [
+    {
+      "query": "عندي مشكلة في تسجيل الدخول - login problem",
+      "unique_matches": [
+        {
+          "rank": 1,
+          "category": "تسجيل الدخول",
+          "subcategory2": "استعادة كلمة المرور",
+          "service": "SASO - Products Safety and Certification",
+          "score": 1.196457028388977,
+          "embedding_index": 89,
+          "description_preview": "Here's a semantically rich description for the \"Saber - تسجيل الدخول / استعادة كلمة المرور\" category..."
+        },
+        {
+          "rank": 2,
+          "category": "التسجيل",
+          "subcategory2": "تسجيل حساب جديد",
+          "service": "SASO - Products Safety and Certification",
+          "score": 1.144418478012085,
+          "embedding_index": 38,
+          "description_preview": "Here's a semantically rich description for the \"Saber - التسجيل\" category, designed for high embeddi..."
+        },
+        {
+          "rank": 3,
+          "category": "مدير النظام",
+          "subcategory2": "تسجيل الدخول",
+          "service": "SASO - Products Safety and Certification",
+          "score": 1.097583532333374,
+          "embedding_index": 39,
+          "description_preview": "Here's a semantically rich description designed for high embedding similarity with user queries rela..."
+        },
+        {
+          "rank": 4,
+          "category": "الإرسالية",
+          "subcategory2": "بيانات الشهادة",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.9639750123023987,
+          "embedding_index": 48,
+          "description_preview": "Here's a semantically rich description designed for high embedding similarity with user queries rela..."
+        },
+        {
+          "rank": 5,
+          "category": "المدفوعات",
+          "subcategory2": "إصدار الفاتورة",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.9595157504081726,
+          "embedding_index": 83,
+          "description_preview": "Okay, here's a semantically rich description for the \"Saber - المدفوعات / Payments\" category, design..."
+        }
+      ],
+      "total_found": 5
+    },
+    {
+      "query": "لا أستطيع الحصول على الشهادة - certificate not available",
+      "unique_matches": [
+        {
+          "rank": 1,
+          "category": "الإرسالية",
+          "subcategory2": "تقديم طلب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 1.1676111221313477,
+          "embedding_index": 29,
+          "description_preview": "Here's a semantically rich description designed for high embedding similarity with user queries rela..."
+        },
+        {
+          "rank": 2,
+          "category": "مطابقة منتج COC",
+          "subcategory2": "عدم ظهور الطلبات",
+          "service": "SASO - Products Safety and Certification",
+          "score": 1.0590059757232666,
+          "embedding_index": 5,
+          "description_preview": "Here's a semantically rich description designed for high embedding similarity with user queries rela..."
+        },
+        {
+          "rank": 3,
+          "category": "طلبات المصانع الموثوقة",
+          "subcategory2": "تقديم طلب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 1.0093785524368286,
+          "embedding_index": 28,
+          "description_preview": "Here's a semantically rich description designed for high embedding similarity with user queries rela..."
+        },
+        {
+          "rank": 4,
+          "category": "الشهادات الصادرة من الهيئة",
+          "subcategory2": "علامة الجودة",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.9388585090637207,
+          "embedding_index": 2,
+          "description_preview": "Here's a semantically rich description for the \"شهادات صادرة من الهيئة\" Saber category, designed for..."
+        },
+        {
+          "rank": 5,
+          "category": "الإقرار الذاتي المحلي",
+          "subcategory2": "استعراض الشهادة",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.9322456121444702,
+          "embedding_index": 87,
+          "description_preview": "Here's a semantically rich description for the \"Saber - الإقرار الذاتي المحلي\" category, designed fo..."
+        }
+      ],
+      "total_found": 5
+    },
+    {
+      "query": "مشكلة في اضافة منتج جديد - cannot add new product",
+      "unique_matches": [
+        {
+          "rank": 1,
+          "category": "إضافة المنتجات",
+          "subcategory2": "إضافة المنتجات",
+          "service": "SASO - Products Safety and Certification",
+          "score": 1.2450612783432007,
+          "embedding_index": 78,
+          "description_preview": "Okay, here's a semantically rich description for the \"إضافة المنتجات / Adding Products\" Saber catego..."
+        },
+        {
+          "rank": 2,
+          "category": "الإرسالية",
+          "subcategory2": "تقديم طلب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 1.025649070739746,
+          "embedding_index": 29,
+          "description_preview": "Here's a semantically rich description designed for high embedding similarity with user queries rela..."
+        },
+        {
+          "rank": 3,
+          "category": "مطابقة منتج COC",
+          "subcategory2": "إضافة الموديلات",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.9322699308395386,
+          "embedding_index": 75,
+          "description_preview": "Here's a semantically rich description designed for high embedding similarity with user queries rela..."
+        },
+        {
+          "rank": 4,
+          "category": "العلامات التجارية",
+          "subcategory2": "إضافة علامة تجارية",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.8452383279800415,
+          "embedding_index": 68,
+          "description_preview": "Okay, here's a semantically rich description for the \"Saber - العلامات التجارية (Trademarks)\" catego..."
+        },
+        {
+          "rank": 5,
+          "category": "فئة النسيج",
+          "subcategory2": "إضافة الموديلات",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.832387387752533,
+          "embedding_index": 71,
+          "description_preview": "Here's a semantically rich description designed for high embedding similarity with user queries rela..."
+        }
+      ],
+      "total_found": 5
+    },
+    {
+      "query": "رفض الطلب - application rejected",
+      "unique_matches": [
+        {
+          "rank": 1,
+          "category": "الإرسالية",
+          "subcategory2": "عدم ظهور الطلبات",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.6206265091896057,
+          "embedding_index": 6,
+          "description_preview": "Here's a semantically rich description designed for high embedding similarity with user queries rela..."
+        },
+        {
+          "rank": 2,
+          "category": "فئة غيار السيارات",
+          "subcategory2": "إضافة الموديلات",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.5920039415359497,
+          "embedding_index": 70,
+          "description_preview": "Okay, here's a semantically rich description designed for high embedding similarity with user querie..."
+        },
+        {
+          "rank": 3,
+          "category": "فئة النسيج",
+          "subcategory2": "تقديم الطلب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.544312059879303,
+          "embedding_index": 31,
+          "description_preview": "Here's a semantically rich description designed for high embedding similarity with user queries rela..."
+        },
+        {
+          "rank": 4,
+          "category": "مدير النظام",
+          "subcategory2": "عدم ظهور الطلبات",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.5007033348083496,
+          "embedding_index": 4,
+          "description_preview": "Here's a semantically rich description designed for high embedding similarity with user queries rela..."
+        },
+        {
+          "rank": 5,
+          "category": "الإقرار الذاتي المحلي",
+          "subcategory2": "إضافة الرقم التسلسلي",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.4825310707092285,
+          "embedding_index": 82,
+          "description_preview": "Here's a semantically rich description for the \"Saber - الإقرار الذاتي المحلي\" category, designed fo..."
+        }
+      ],
+      "total_found": 5
+    },
+    {
+      "query": "مشكلة في الدفع - payment issue",
+      "unique_matches": [
+        {
+          "rank": 1,
+          "category": "المدفوعات",
+          "subcategory2": "إصدار الفاتورة",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.9291085004806519,
+          "embedding_index": 83,
+          "description_preview": "Okay, here's a semantically rich description for the \"Saber - المدفوعات / Payments\" category, design..."
+        },
+        {
+          "rank": 2,
+          "category": "الإرسالية",
+          "subcategory2": "حالة الطلب في النظام",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.8625534772872925,
+          "embedding_index": 26,
+          "description_preview": "Okay, here's a semantically rich description designed for high embedding similarity with user querie..."
+        },
+        {
+          "rank": 3,
+          "category": "التسجيل",
+          "subcategory2": "التحقق من السجل التجاري",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.5095944404602051,
+          "embedding_index": 63,
+          "description_preview": "Okay, here's a semantically rich description designed for high embedding similarity with user querie..."
+        },
+        {
+          "rank": 4,
+          "category": "إضافة المنتجات",
+          "subcategory2": "إضافة المنتجات",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.47971802949905396,
+          "embedding_index": 78,
+          "description_preview": "Okay, here's a semantically rich description for the \"إضافة المنتجات / Adding Products\" Saber catego..."
+        },
+        {
+          "rank": 5,
+          "category": "فسح",
+          "subcategory2": "رقم المستورد",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.3961940407752991,
+          "embedding_index": 19,
+          "description_preview": "Okay, here's a semantically rich description designed for high embedding similarity with user querie..."
+        }
+      ],
+      "total_found": 5
+    }
+  ],
+  "improvements": [
+    "Removed duplicate categories",
+    "Shows unique main categories only",
+    "Includes subcategory context",
+    "Provides description previews",
+    "Better result diversity"
+  ],
+  "metadata": {
+    "total_categories": 100,
+    "unique_categories": 18,
+    "embedding_dimension": 768
+  }
+}

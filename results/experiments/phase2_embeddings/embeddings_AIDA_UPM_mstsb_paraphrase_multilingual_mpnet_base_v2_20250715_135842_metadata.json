@@ -1,0 +1,15 @@
+{
+  "model_name": "AIDA-UPM/mstsb-paraphrase-multilingual-mpnet-base-v2",
+  "total_texts": 100,
+  "generation_time_seconds": 6.012512922286987,
+  "texts_per_second": 16.631980885949243,
+  "embedding_dimension": 768,
+  "embedding_dtype": "float32",
+  "method": "direct_sentence_transformers",
+  "timestamp": "20250715_135842",
+  "embeddings_file": "..\\results\\experiments\\phase2_embeddings\\embeddings_AIDA_UPM_mstsb_paraphrase_multilingual_mpnet_base_v2_20250715_135842.npy",
+  "data_shape": [
+    100,
+    768
+  ]
+}

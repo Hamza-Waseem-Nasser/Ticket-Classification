@@ -1,0 +1,21 @@
+{
+  "model_name": "AIDA-UPM/mstsb-paraphrase-multilingual-mpnet-base-v2",
+  "approach": "optimized_deduplicated",
+  "test_queries": [
+    "عندي مشكلة في تسجيل الدخول - login problem",
+    "لا أستطيع الحصول على الشهادة - certificate not available",
+    "مشكلة في اضافة منتج جديد - cannot add new product",
+    "رفض الطلب - application rejected",
+    "مشكلة في الدفع - payment issue"
+  ],
+  "results": [
+    {
+      "query": "عندي مشكلة في تسجيل الدخول - login problem",
+      "unique_matches": [
+        {
+          "rank": 1,
+          "category": "تسجيل الدخول",
+          "subcategory2": "استعادة كلمة المرور",
+          "service": "SASO - Products Safety and Certification",
+          "score": 1.196457028388977,
+          "embedding_index": 
