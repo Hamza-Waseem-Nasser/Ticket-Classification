@@ -1,0 +1,19 @@
+# Project Metadata
+name = "saber-classification"
+description = "Incident classification for Saber using agentic AI and FastAPI."
+authors = ["Your Name <your.email@example.com>"]
+version = "0.1.0"
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]

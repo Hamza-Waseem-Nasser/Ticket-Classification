@@ -1,0 +1,39 @@
+# Data Processing
+pandas
+numpy
+matplotlib
+seaborn
+missingno
+
+# Text Processing & Arabic Support
+arabic-reshaper
+python-bidi
+
+# Configuration
+pyyaml
+
+# AI & Embeddings
+openai>=1.0.0
+sentence-transformers
+transformers
+torch
+
+# Vector Database & Search
+faiss-cpu
+# faiss-gpu  # Uncomment if you have GPU support
+
+# API & Production
+fastapi
+uvicorn
+pydantic
+
+# Utilities
+scikit-learn
+tqdm
+requests
+python-dotenv
+joblib
+
+# Evaluation & Metrics
+mlflow
+wandb

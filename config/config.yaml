@@ -1,0 +1,59 @@
+# Incident Classification Configuration
+
+# Data Configuration
+data:
+  raw_file: "Saber Categories-1.csv"
+  test_size: 0.2
+  random_state: 42
+
+# AI Agent Configuration
+ai_agent:
+  provider: "openai"  # or "ollama"
+  model: "gpt-4"  # or "llama3"
+  temperature: 0.1
+  max_tokens: 500
+
+# Embedding Models to Test
+embedding_models:
+  multilingual:
+    - "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    - "sentence-transformers/distiluse-base-multilingual-cased"
+    - "sentence-transformers/LaBSE"
+  arabic_specific:
+    - "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+    - "aubmindlab/bert-base-arabertv02"
+  openai:
+    - "text-embedding-ada-002"
+    - "text-embedding-3-small"
+    - "text-embedding-3-large"
+
+# FAISS Configuration
+faiss:
+  index_type: "IndexFlatIP"  # Inner Product for cosine similarity
+  nprobe: 10
+  similarity_threshold: 0.75
+  top_k: 5
+
+# Classification Configuration
+classification:
+  hierarchical: true
+  primary_field: "SubCategory"
+  secondary_field: "SubCategory2"
+  confidence_threshold: 0.8
+  
+# Evaluation Configuration
+evaluation:
+  metrics:
+    - "accuracy"
+    - "precision"
+    - "recall"
+    - "f1_score"
+    - "top_k_accuracy"
+  cross_validation_folds: 5
+  
+# Production Configuration
+production:
+  api_host: "0.0.0.0"
+  api_port: 8000
+  max_response_time: 3.0  # seconds
+  batch_size: 32

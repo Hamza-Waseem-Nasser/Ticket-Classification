@@ -1,0 +1,49 @@
+# .gitignore for Python projects
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+.env.*
+.venv.*
+.ipynb_checkpoints/
+.DS_Store
+*.sqlite3
+*.db
+*.log
+*.pot
+*.mo
+*.swp
+*.bak
+*.tmp
+*.old
+*.orig
+*.egg-info/
+dist/
+build/
+.eggs/
+# Jupyter Notebook
+.ipynb_checkpoints/
+# VSCode
+.vscode/
+# Data files
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.zip
+*.tar.gz
+*.rar
+*.7z
+# Model artifacts
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+*.pb
