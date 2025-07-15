@@ -1,0 +1,17 @@
+{
+  "model_name": "text-embedding-ada-002",
+  "provider": "openai",
+  "total_texts": 100,
+  "generation_time_seconds": 2.4173476696014404,
+  "texts_per_second": 41.36765317522054,
+  "embedding_dimension": 1536,
+  "embedding_dtype": "float64",
+  "method": "openai_api",
+  "batch_size": 100,
+  "timestamp": "20250715_144801",
+  "embeddings_file": "..\\results\\experiments\\phase2_embeddings\\embeddings_text_embedding_ada_002_20250715_144801.npy",
+  "data_shape": [
+    100,
+    1536
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "model_name": "text-embedding-3-small",
+  "test_type": "real_user_tickets",
+  "total_tickets_tested": 23,
+  "results": [
+    {
+      "ticket_id": 0,
+      "ticket_description": "عندي حساب سابق في منصة سابر اود ان استرجعه لكي اتمكن من استخدام الحساب في الخدمات (AutoClosed)",
+      "original_description": "عندي حساب سابق في منصة سابر اود ان استرجعه لكي اتمكن من استخدام الحساب في الخدمات (AutoClosed)",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "تسجيل الدخول",
+          "subcategory2": "استعادة كلمة المرور",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.3508709669113159,
+          "confidence": 35.08709669113159,
+          "embedding_index": 89
+        },
+        {
+          "rank": 2,
+          "subcategory": "التسجيل",
+          "subcategory2": "تسجيل حساب جديد",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.3499274253845215,
+          "confidence": 34.99274253845215,
+          "embedding_index": 38
+        },
+        {
+          "rank": 3,
+          "subcategory": "تسجيل الدخول",
+          "subcategory2": "خطأ في بيانات الحساب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.34956562519073486,
+          "confidence": 34.956562519073486,
+          "embedding_index": 21
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "تسجيل الدخول",
+        "subcategory2": "استعادة كلمة المرور",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.3508709669113159,
+        "confidence": 35.08709669113159,
+        "embedding_index": 89
+      }
+    },
+    {
+      "ticket_id": 1,
+      "ticket_description": "الاسم:محمد عبدالله سعد رقم الهوية: رقم الجوال: الايميل المسجل:رقم الطلب:--تحديد نوع الطلب ( مطابقة /ارساليه): ارساليةالسجل التجاري:وصف الاشكالية: تم سداد الرسوم وتم التحقق في ادمن سابر بانه تم اصدار الشهادة لكن عند العميل لم يتم تحديث حالة الطلب ويظهر له بانتظار السداد\n\n الايميل :\nرقم الطلب  : --\n (AutoClosed)",
+      "original_description": "الاسم:محمد عبدالله سعد رقم الهوية: رقم الجوال: الايميل المسجل:رقم الطلب:--تحديد نوع الطلب ( مطابقة /ارساليه): ارساليةالسجل التجاري:وصف الاشكالية: تم سداد الرسوم وتم التحقق في ادمن سابر بانه تم اصدار الشهادة لكن عند العميل لم يتم تحديث حالة الطلب ويظهر له بانتظار السداد\n\n الايميل :\nرقم الطلب  : --\n (AutoClosed)",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "الإرسالية",
+          "subcategory2": "حالة الطلب في النظام",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.4013157784938812,
+          "confidence": 40.13157784938812,
+          "embedding_index": 26
+        },
+        {
+          "rank": 2,
+          "subcategory": "الإرسالية",
+          "subcategory2": "تقديم طلب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.37859833240509033,
+          "confidence": 37.85983324050903,
+          "embedding_index": 29
+        },
+        {
+          "rank": 3,
+          "subcategory": "الإرسالية",
+          "subcategory2": "عدم ظهور الطلبات",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.3602566123008728,
+          "confidence": 36.02566123008728,
+          "embedding_index": 6
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "الإرسالية",
+        "subcategory2": "حالة الطلب في النظام",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.4013157784938812,
+        "confidence": 40.13157784938812,
+        "embedding_index": 26
+      }
+    },
+    {
+      "ticket_id": 2,
+      "ticket_description": "الإشكالية:يفيد العميل بعدم القدرة على تسجيل الدخول للحساب كما هو مرفق لكمالأسم:Mohammed Abdullah Saad رقم الهوية:رقم الجوال:السجل التجاري:البريد الإلكتروني المسجل:\n\n صورة او نص الخطأ :\n الايميل :\n (AutoClosed)",
+      "original_description": "الإشكالية:يفيد العميل بعدم القدرة على تسجيل الدخول للحساب كما هو مرفق لكمالأسم:Mohammed Abdullah Saad رقم الهوية:رقم الجوال:السجل التجاري:البريد الإلكتروني المسجل:\n\n صورة او نص الخطأ :\n الايميل :\n (AutoClosed)",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "تسجيل الدخول",
+          "subcategory2": "رمز التحقق للبريد الالكتروني",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.4109480381011963,
+          "confidence": 41.09480381011963,
+          "embedding_index": 17
+        },
+        {
+          "rank": 2,
+          "subcategory": "التسجيل",
+          "subcategory2": "تسجيل حساب جديد",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.39788246154785156,
+          "confidence": 39.788246154785156,
+          "embedding_index": 38
+        },
+        {
+          "rank": 3,
+          "subcategory": "تسجيل الدخول",
+          "subcategory2": "رمز التحقق للجوال",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.39715850353240967,
+          "confidence": 39.71585035324097,
+          "embedding_index": 15
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "تسجيل الدخول",
+        "subcategory2": "رمز التحقق للبريد الالكتروني",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.4109480381011963,
+        "confidence": 41.09480381011963,
+        "embedding_index": 17
+      }
+    },
+    {
+      "ticket_id": 3,
+      "ticket_description": "في شهادة مطابقة المنتج يظهر وجود رمز غير صحيح في رقم الموديلتم ارسال تحديث الموديل من قبل الهيئة ولكن لم يتم تحديثه بسبب عدم التعرف على الرقممرفق شهادة المطابقة وصورة من تحديث الموديلRFGرقم الترخيص المحدثHMWRF‐M(AutoClosed)",
+      "original_description": "في شهادة مطابقة المنتج يظهر وجود رمز غير صحيح في رقم الموديلتم ارسال تحديث الموديل من قبل الهيئة ولكن لم يتم تحديثه بسبب عدم التعرف على الرقممرفق شهادة المطابقة وصورة من تحديث الموديلRFGرقم الترخيص المحدثHMWRF‐M(AutoClosed)",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "مطابقة منتج COC",
+          "subcategory2": "تحديث موديل مرخص",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.3727957606315613,
+          "confidence": 37.27957606315613,
+          "embedding_index": 41
+        },
+        {
+          "rank": 2,
+          "subcategory": "إضافة المنتجات",
+          "subcategory2": "الرمز الجمركي للمنتج",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.31569579243659973,
+          "confidence": 31.569579243659973,
+          "embedding_index": 60
+        },
+        {
+          "rank": 3,
+          "subcategory": "الشهادات الصادرة من الهيئة",
+          "subcategory2": "علامة الجودة",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.31320059299468994,
+          "confidence": 31.320059299468994,
+          "embedding_index": 2
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "مطابقة منتج COC",
+        "subcategory2": "تحديث موديل مرخص",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.3727957606315613,
+        "confidence": 37.27957606315613,
+        "embedding_index": 41
+      }
+    },
+    {
+      "ticket_id": 4,
+      "ticket_description": "تم سداد فاتتورة شهادة الارسالية وتظهر الفاتورة مسدده ولكن لم تظهر لنا الشهادة ؟ (AutoClosed)",
+      "original_description": "تم سداد فاتتورة شهادة الارسالية وتظهر الفاتورة مسدده ولكن لم تظهر لنا الشهادة ؟ (AutoClosed)",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "الإرسالية",
+          "subcategory2": "إضافة الفواتير",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.3510056734085083,
+          "confidence": 35.10056734085083,
+          "embedding_index": 80
+        },
+        {
+          "rank": 2,
+          "subcategory": "الإرسالية",
+          "subcategory2": "حالة الطلب في النظام",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.35000312328338623,
+          "confidence": 35.00031232833862,
+          "embedding_index": 26
+        },
+        {
+          "rank": 3,
+          "subcategory": "الإرسالية",
+          "subcategory2": "التأخير في الطلبات الغير تجارية",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.3375108540058136,
+          "confidence": 33.75108540058136,
+          "embedding_index": 64
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "الإرسالية",
+        "subcategory2": "إضافة الفواتير",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.3510056734085083,
+        "confidence": 35.10056734085083,
+        "embedding_index": 80
+      }
+    },
+    {
+      "ticket_id": 5,
+      "ticket_description": "حسب اصرا العميل يفيد العميل انه عند حساب شخصي ويرغب ان يسجل في المنصه بحساب المؤسسه ولكن يرفض النظام بسبب ان الهويه مسجله على حسابين ويرغب في حل الاشكاليه\n\n الايميل :\n (AutoClosed)",
+      "original_description": "حسب اصرا العميل يفيد العميل انه عند حساب شخصي ويرغب ان يسجل في المنصه بحساب المؤسسه ولكن يرفض النظام بسبب ان الهويه مسجله على حسابين ويرغب في حل الاشكاليه\n\n الايميل :\n (AutoClosed)",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "التسجيل",
+          "subcategory2": "تسجيل حساب جديد",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.33677369356155396,
+          "confidence": 33.677369356155396,
+          "embedding_index": 38
+        },
+        {
+          "rank": 2,
+          "subcategory": "التسجيل",
+          "subcategory2": "تفعيل الحساب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.33561134338378906,
+          "confidence": 33.561134338378906,
+          "embedding_index": 33
+        },
+        {
+          "rank": 3,
+          "subcategory": "بيانات المنشأة",
+          "subcategory2": "ايميل مفوض المنشأة",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.3150492310523987,
+          "confidence": 31.504923105239868,
+          "embedding_index": 51
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "التسجيل",
+        "subcategory2": "تسجيل حساب جديد",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.33677369356155396,
+        "confidence": 33.677369356155396,
+        "embedding_index": 38
+      }
+    },
+    {
+      "ticket_id": 6,
+      "ticket_description": "تم تقديم طلب تقني رقم  ولم يتم حل المشكلة (AutoClosed)",
+      "original_description": "تم تقديم طلب تقني رقم  ولم يتم حل المشكلة (AutoClosed)",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "جهات المطابقة",
+          "subcategory2": "اختيار الملف الفني",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.3014746904373169,
+          "confidence": 30.14746904373169,
+          "embedding_index": 96
+        },
+        {
+          "rank": 2,
+          "subcategory": "فئة غيار السيارات",
+          "subcategory2": "تقديم الطلب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.29708272218704224,
+          "confidence": 29.708272218704224,
+          "embedding_index": 32
+        },
+        {
+          "rank": 3,
+          "subcategory": "فئة غيار السيارات",
+          "subcategory2": "حالة الطلب في النظام",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.29637977480888367,
+          "confidence": 29.637977480888367,
+          "embedding_index": 22
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "جهات المطابقة",
+        "subcategory2": "اختيار الملف الفني",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.3014746904373169,
+        "confidence": 30.14746904373169,
+        "embedding_index": 96
+      }
+    },
+    {
+      "ticket_id": 7,
+      "ticket_description": "بنا على طلب العميل يفيد العميل ان بعد تسجيل المنتج لقد اضافة المنتج ولم اضافة في الصفحة ولم يستطع اصدار الشهادة او السدادالاسم:محمد عبدالله سعد الايميل\nرقم الهوية :\n الايميل :\n رقم السجل التجاري :\n (AutoClosed)",
+      "original_description": "بنا على طلب العميل يفيد العميل ان بعد تسجيل المنتج لقد اضافة المنتج ولم اضافة في الصفحة ولم يستطع اصدار الشهادة او السدادالاسم:محمد عبدالله سعد الايميل\nرقم الهوية :\n الايميل :\n رقم السجل التجاري :\n (AutoClosed)",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "إضافة المنتجات",
+          "subcategory2": "الشهادات المطلوبة",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.38421404361724854,
+          "confidence": 38.42140436172485,
+          "embedding_index": 59
+        },
+        {
+          "rank": 2,
+          "subcategory": "الإرسالية",
+          "subcategory2": "بيانات الشهادة",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.37779414653778076,
+          "confidence": 37.779414653778076,
+          "embedding_index": 48
+        },
+        {
+          "rank": 3,
+          "subcategory": "التسجيل",
+          "subcategory2": "المرفقات",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.37194985151290894,
+          "confidence": 37.194985151290894,
+          "embedding_index": 54
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "إضافة المنتجات",
+        "subcategory2": "الشهادات المطلوبة",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.38421404361724854,
+        "confidence": 38.42140436172485,
+        "embedding_index": 59
+      }
+    },
+    {
+      "ticket_id": 8,
+      "ticket_description": "الاسم : مؤسسة TestXX  لزينة السيارات رقم الإقامة:رقم الجوال: البريد الالكتروني: رقم السجل التجاري: وصفالإشكالية: تم تسجيل الدخول للموقع كذا مره لكنه يقول خطا ويبدو الاشكاليه من قبلكموصف اشكالية العميل/يرغب العميل في تسجيل الدخول على منصة سابر ولكن يظهر لك خطا مرفق صورة من المشكلة\n\n الايميل :\n (AutoClosed)",
+      "original_description": "الاسم : مؤسسة TestXX  لزينة السيارات رقم الإقامة:رقم الجوال: البريد الالكتروني: رقم السجل التجاري: وصفالإشكالية: تم تسجيل الدخول للموقع كذا مره لكنه يقول خطا ويبدو الاشكاليه من قبلكموصف اشكالية العميل/يرغب العميل في تسجيل الدخول على منصة سابر ولكن يظهر لك خطا مرفق صورة من المشكلة\n\n الايميل :\n (AutoClosed)",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "التسجيل",
+          "subcategory2": "تسجيل حساب جديد",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.39318206906318665,
+          "confidence": 39.318206906318665,
+          "embedding_index": 38
+        },
+        {
+          "rank": 2,
+          "subcategory": "تسجيل الدخول",
+          "subcategory2": "رمز التحقق للبريد الالكتروني",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.3751172423362732,
+          "confidence": 37.51172423362732,
+          "embedding_index": 17
+        },
+        {
+          "rank": 3,
+          "subcategory": "تسجيل الدخول",
+          "subcategory2": "رمز التحقق للجوال",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.37166330218315125,
+          "confidence": 37.166330218315125,
+          "embedding_index": 15
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "التسجيل",
+        "subcategory2": "تسجيل حساب جديد",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.39318206906318665,
+        "confidence": 39.318206906318665,
+        "embedding_index": 38
+      }
+    },
+    {
+      "ticket_id": 9,
+      "ticket_description": "الاسم : محمد عبدالله سعد رقم الجوال : رقم طلب : UVAE الايميل : اصرار عميل فتح بلاغ .يفيد العميل انه تم الغاء طلب بعد ماتم بدفع رسوم طلب علما انه تواصل مع جهة تفتيش جهة تم الغاء جهة من سابر العميل رغب رسوم ترجع له\n\nرقم الهوية :\n الايميل :\nنوع الطلب : شهادة تفتيش\nرقم الطلب  : UVAE\n (AutoClosed)",
+      "original_description": "الاسم : محمد عبدالله سعد رقم الجوال : رقم طلب : UVAE الايميل : اصرار عميل فتح بلاغ .يفيد العميل انه تم الغاء طلب بعد ماتم بدفع رسوم طلب علما انه تواصل مع جهة تفتيش جهة تم الغاء جهة من سابر العميل رغب رسوم ترجع له\n\nرقم الهوية :\n الايميل :\nنوع الطلب : شهادة تفتيش\nرقم الطلب  : UVAE\n (AutoClosed)",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "الإرسالية",
+          "subcategory2": "حالة الطلب في النظام",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.35012608766555786,
+          "confidence": 35.012608766555786,
+          "embedding_index": 26
+        },
+        {
+          "rank": 2,
+          "subcategory": "الإرسالية",
+          "subcategory2": "عدم ظهور الطلبات",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.338241845369339,
+          "confidence": 33.8241845369339,
+          "embedding_index": 6
+        },
+        {
+          "rank": 3,
+          "subcategory": "فسح",
+          "subcategory2": "رقم المستورد",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.3305644989013672,
+          "confidence": 33.05644989013672,
+          "embedding_index": 19
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "الإرسالية",
+        "subcategory2": "حالة الطلب في النظام",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.35012608766555786,
+        "confidence": 35.012608766555786,
+        "embedding_index": 26
+      }
+    }
+  ],
+  "analysis": {
+    "total_processed": 10,
+    "average_confidence": 36.52706801891327,
+    "classification_format": "SubCategory → SubCategory2"
+  }
+}

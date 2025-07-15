@@ -1,0 +1,17 @@
+{
+  "model_name": "text-embedding-3-small",
+  "provider": "openai",
+  "total_texts": 100,
+  "generation_time_seconds": 2.952138900756836,
+  "texts_per_second": 33.873744888617246,
+  "embedding_dimension": 1536,
+  "embedding_dtype": "float64",
+  "method": "openai_api",
+  "batch_size": 100,
+  "timestamp": "20250715_144753",
+  "embeddings_file": "..\\results\\experiments\\phase2_embeddings\\embeddings_text_embedding_3_small_20250715_144753.npy",
+  "data_shape": [
+    100,
+    1536
+  ]
+}

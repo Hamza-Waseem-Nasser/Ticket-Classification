@@ -1,0 +1,43 @@
+{
+  "comparison_date": "2025-07-15T14:58:16.704721",
+  "models_compared": 4,
+  "performance_ranking": [
+    {
+      "rank": 1,
+      "model": "OpenAI: text-embedding-ada-002",
+      "type": "🤖 OpenAI",
+      "avg_confidence": 81.28864467144012,
+      "total_processed": 10
+    },
+    {
+      "rank": 2,
+      "model": "HF: AIDA-UPM/mstsb-paraphrase-multilingual-mpnet-base-v2",
+      "type": "🔬 HuggingFace",
+      "avg_confidence": 64.23996467590332,
+      "total_processed": 10
+    },
+    {
+      "rank": 3,
+      "model": "OpenAI: text-embedding-3-large",
+      "type": "🤖 OpenAI",
+      "avg_confidence": 44.520650804042816,
+      "total_processed": 10
+    },
+    {
+      "rank": 4,
+      "model": "OpenAI: text-embedding-3-small",
+      "type": "🤖 OpenAI",
+      "avg_confidence": 36.52706801891327,
+      "total_processed": 10
+    }
+  ],
+  "best_model": {
+    "name": "OpenAI: text-embedding-ada-002",
+    "confidence": 81.28864467144012,
+    "type": "🤖 OpenAI"
+  },
+  "provider_averages": {
+    "huggingface": 64.23996467590332,
+    "openai": 54.11212116479874
+  }
+}
