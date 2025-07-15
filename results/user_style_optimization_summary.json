@@ -1,0 +1,17 @@
+{
+  "total_categories": 100,
+  "train_samples": 80,
+  "test_samples": 20,
+  "user_style_descriptions_generated": 100,
+  "average_description_length": 1782.57,
+  "ai_provider": "gemini",
+  "ai_model": "gemini-2.0-flash",
+  "optimization_approach": "User query pattern analysis → AI prompt engineering",
+  "key_improvements": [
+    "Arabic-English code-switching",
+    "User perspective problem descriptions",
+    "Informal conversational tone",
+    "Problem-focused structure",
+    "Real user terminology"
+  ]
+}

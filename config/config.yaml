@@ -8,8 +8,8 @@ data:
 
 # AI Agent Configuration
 ai_agent:
-  provider: "openai"  # or "ollama"
-  model: "gpt-4"  # or "llama3"
+  provider: "gemini"  # openai, ollama, or gemini
+  model: "gemini-2.0-flash"  # or gemini-1.5-flash, gpt-4o-mini, llama3
   temperature: 0.1
   max_tokens: 500
 
