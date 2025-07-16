@@ -1,0 +1,20 @@
+{
+  "model_name": "Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2",
+  "timestamp": "2025-07-16T16:26:14.812175",
+  "num_categories": 100,
+  "embedding_dimension": 768,
+  "categories_file": "Saber Categories-1.csv",
+  "preprocessing_steps": [
+    "text_cleaning",
+    "llm_enrichment_with_gemini",
+    "four_field_extraction",
+    "arabic_enhanced_descriptions"
+  ],
+  "fields_used": [
+    "SubCategory_Prefix",
+    "SubCategory_Keywords",
+    "SubCategory2_Prefix",
+    "SubCategory2_Keywords"
+  ],
+  "enhancement_method": "gemini_llm_arabic_enrichment"
+}

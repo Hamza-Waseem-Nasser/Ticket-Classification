@@ -179,10 +179,54 @@ class EmbeddingManager:
             'enhanced_data_path': enhanced_data_path if hasattr(self, 'category_data') and self.category_data else None
         }
     
-    def process_categories(self, categories_df: pd.DataFrame) -> List[str]:
+    def find_existing_enhanced_data(self, model_name: str = None) -> Optional[str]:
+        """Find the most recent enhanced category data file (model-independent)"""
+        try:
+            # Look for any enhanced categories file (not model-specific since descriptions are reusable)
+            pattern = f"enhanced_categories_*.json"
+            
+            # Search for existing files
+            matching_files = list(self.results_dir.glob(pattern))
+            
+            if matching_files:
+                # Get the most recent file
+                latest_file = max(matching_files, key=lambda f: f.stat().st_mtime)
+                self.logger.info(f"Found existing enhanced data: {latest_file.name}")
+                self.logger.info("Reusing LLM-generated descriptions (model-independent)")
+                return str(latest_file)
+            
+            return None
+        except Exception as e:
+            self.logger.warning(f"Error finding existing enhanced data: {e}")
+            return None
+    
+    def load_enhanced_data(self, file_path: str) -> Optional[List[Dict]]:
+        """Load enhanced category data from JSON file"""
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            self.logger.info(f"Loaded {len(data)} enhanced categories from {Path(file_path).name}")
+            return data
+        except Exception as e:
+            self.logger.error(f"Failed to load enhanced data from {file_path}: {e}")
+            return None
+    
+    def process_categories(self, categories_df: pd.DataFrame, model_name: str = None) -> List[str]:
         """Process category data and create LLM-enhanced text representations for embedding"""
         texts = []
         processed_data = []
+        
+        # Check for existing enhanced data first
+        if model_name:
+            existing_data_path = self.find_existing_enhanced_data()
+            if existing_data_path:
+                # Load existing enhanced data
+                self.category_data = self.load_enhanced_data(existing_data_path)
+                if self.category_data:
+                    # Extract the enhanced texts for embedding
+                    texts = [item['enhanced_text'] for item in self.category_data]
+                    self.logger.info(f"Using {len(texts)} existing enhanced texts for embedding")
+                    return texts
         
         self.logger.info("Starting LLM enrichment for categories...")
         

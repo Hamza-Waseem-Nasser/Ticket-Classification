@@ -1,0 +1,141 @@
+{
+  "model_name": "Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2",
+  "test_type": "real_user_tickets",
+  "total_tickets_tested": 3,
+  "results": [
+    {
+      "ticket_id": 0,
+      "ticket_description": "عندي حساب سابق في منصة سابر اود ان استرجعه لكي اتمكن من استخدام الحساب في الخدمات",
+      "original_description": "عندي حساب سابق في منصة سابر اود ان استرجعه لكي اتمكن من استخدام الحساب في الخدمات",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "تسجيل الدخول",
+          "subcategory2": "تحديث السجل التجاري",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.5635623931884766,
+          "confidence": 56.356239318847656,
+          "embedding_index": 43
+        },
+        {
+          "rank": 2,
+          "subcategory": "تسجيل الدخول",
+          "subcategory2": "خطأ في بيانات الحساب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.5435609817504883,
+          "confidence": 54.35609817504883,
+          "embedding_index": 21
+        },
+        {
+          "rank": 3,
+          "subcategory": "التسجيل",
+          "subcategory2": "تفعيل الحساب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.5423895716667175,
+          "confidence": 54.23895716667175,
+          "embedding_index": 33
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "تسجيل الدخول",
+        "subcategory2": "تحديث السجل التجاري",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.5635623931884766,
+        "confidence": 56.356239318847656,
+        "embedding_index": 43
+      }
+    },
+    {
+      "ticket_id": 1,
+      "ticket_description": "تم سداد الرسوم وتم التحقق في ادمن سابر بانه تم اصدار الشهادة لكن عند العميل لم يتم تحديث حالة الطلب ويظهر له بانتظار السداد الايميل : رقم الطلب :",
+      "original_description": "تم سداد الرسوم وتم التحقق في ادمن سابر بانه تم اصدار الشهادة لكن عند العميل لم يتم تحديث حالة الطلب ويظهر له بانتظار السداد الايميل : رقم الطلب :",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "الإرسالية",
+          "subcategory2": "الشهادة تحت الانشاء",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.6533381938934326,
+          "confidence": 65.33381938934326,
+          "embedding_index": 57
+        },
+        {
+          "rank": 2,
+          "subcategory": "المدفوعات",
+          "subcategory2": "بعد سداد الفاتورة لا تنعكس حالة الطلب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.628135621547699,
+          "confidence": 62.8135621547699,
+          "embedding_index": 49
+        },
+        {
+          "rank": 3,
+          "subcategory": "الإرسالية",
+          "subcategory2": "حالة الطلب في النظام",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.5841755867004395,
+          "confidence": 58.417558670043945,
+          "embedding_index": 26
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "الإرسالية",
+        "subcategory2": "الشهادة تحت الانشاء",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.6533381938934326,
+        "confidence": 65.33381938934326,
+        "embedding_index": 57
+      }
+    },
+    {
+      "ticket_id": 2,
+      "ticket_description": "يفيد العميل بعدم القدرة على تسجيل الدخول للحساب كما هو مرفق لكم الأسم",
+      "original_description": "يفيد العميل بعدم القدرة على تسجيل الدخول للحساب كما هو مرفق لكم الأسم",
+      "classifications": [
+        {
+          "rank": 1,
+          "subcategory": "تسجيل الدخول",
+          "subcategory2": "رمز التحقق للبريد الالكتروني",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.6196022033691406,
+          "confidence": 61.96022033691406,
+          "embedding_index": 17
+        },
+        {
+          "rank": 2,
+          "subcategory": "تسجيل الدخول",
+          "subcategory2": "خطأ في بيانات الحساب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.6154972314834595,
+          "confidence": 61.54972314834595,
+          "embedding_index": 21
+        },
+        {
+          "rank": 3,
+          "subcategory": "التسجيل",
+          "subcategory2": "تفعيل الحساب",
+          "service": "SASO - Products Safety and Certification",
+          "score": 0.6098954677581787,
+          "confidence": 60.98954677581787,
+          "embedding_index": 33
+        }
+      ],
+      "best_match": {
+        "rank": 1,
+        "subcategory": "تسجيل الدخول",
+        "subcategory2": "رمز التحقق للبريد الالكتروني",
+        "service": "SASO - Products Safety and Certification",
+        "score": 0.6196022033691406,
+        "confidence": 61.96022033691406,
+        "embedding_index": 17
+      }
+    }
+  ],
+  "analysis": {
+    "total_processed": 3,
+    "average_confidence": 61.21675968170166,
+    "classification_format": "SubCategory → SubCategory2"
+  }
+}

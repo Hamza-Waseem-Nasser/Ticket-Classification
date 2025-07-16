@@ -27,7 +27,7 @@ def main():
             'tickets_file': 'cleaned_tickets.csv'
         },
         'embedding': {
-            'model': 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2',  # Larger multilingual model
+            'model': 'Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2',  # Arabic-specialized model
             'max_tickets': 3
         }
     }
@@ -58,10 +58,10 @@ def main():
     
     # Process categories for embedding
     print("🔤 Processing categories for embedding...")
-    category_texts = embedding_manager.process_categories(categories_df)
+    model_name = config['embedding']['model']
+    category_texts = embedding_manager.process_categories(categories_df, model_name)
     
     # Load embedding model
-    model_name = config['embedding']['model']
     print(f"🤖 Loading embedding model: {model_name}")
     model = embedding_manager.load_sentence_transformer(model_name)
     
