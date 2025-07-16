@@ -1,0 +1,10 @@
+{
+  "model_name": "text-embedding-3-small",
+  "embedding_dimension": 1536,
+  "num_categories": 100,
+  "timestamp": "2025-07-16T17:31:56.403824",
+  "test_type": "thiqa_validation",
+  "categories_file": "Saber Categories-1.csv",
+  "thiqa_file": "Thiqa-Cleaned-by-me.csv",
+  "subset_size": 20
+}

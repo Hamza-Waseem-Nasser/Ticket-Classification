@@ -27,8 +27,8 @@ def main():
             'tickets_file': 'cleaned_tickets.csv'
         },
         'embedding': {
-            'model': 'Omartificial-Intelligence-Space/Arabic-Triplet-Matryoshka-V2',  # Arabic-specialized model
-            'max_tickets': 3
+            'model': 'text-embedding-3-small',  # OpenAI embedding model
+            'max_tickets': 20  # Subset testing first
         }
     }
     

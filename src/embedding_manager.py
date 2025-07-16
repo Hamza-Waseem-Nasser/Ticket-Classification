@@ -15,6 +15,7 @@ import logging
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import google.generativeai as genai
+import openai
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -46,6 +47,16 @@ class EmbeddingManager:
             except Exception as e:
                 self.logger.warning(f"Failed to initialize Gemini: {e}")
                 self.gemini_model = None
+        
+        # Initialize OpenAI if API key is available
+        self.openai_client = None
+        if os.getenv('OPENAI_API_KEY'):
+            try:
+                self.openai_client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+                self.logger.info("OpenAI client initialized for embeddings")
+            except Exception as e:
+                self.logger.warning(f"Failed to initialize OpenAI: {e}")
+                self.openai_client = None
         
     def enrich_with_llm(self, subcategory_prefix: str, subcategory_keywords: str, 
                        subcategory2_prefix: str, subcategory2_keywords: str) -> str:
@@ -109,6 +120,30 @@ class EmbeddingManager:
             return embeddings
         except Exception as e:
             self.logger.error(f"Sentence Transformer embedding generation failed: {e}")
+            return None
+    
+    def load_openai_model(self, model_name: str):
+        """Load OpenAI embedding model"""
+        if not self.openai_client:
+            self.logger.error("OpenAI client not initialized")
+            return None
+        return model_name
+    
+    def generate_openai_embeddings(self, texts: List[str], model_name: str) -> np.ndarray:
+        """Generate embeddings using OpenAI API"""
+        try:
+            embeddings = []
+            batch_size = 100
+            
+            for i in range(0, len(texts), batch_size):
+                batch = texts[i:i + batch_size]
+                response = self.openai_client.embeddings.create(input=batch, model=model_name)
+                batch_embeddings = [data.embedding for data in response.data]
+                embeddings.extend(batch_embeddings)
+            
+            return np.array(embeddings, dtype=np.float32)
+        except Exception as e:
+            self.logger.error(f"OpenAI embedding generation failed: {e}")
             return None
     
     def create_faiss_index(self, embeddings: np.ndarray, model_name: str) -> faiss.Index:
@@ -276,12 +311,17 @@ class EmbeddingManager:
             return []
         
         try:
-            # Generate embedding for query using Sentence Transformer
-            model = self.models.get(model_name)
-            if not model:
-                model = self.load_sentence_transformer(model_name)
-                self.models[model_name] = model
-            query_embedding = self.generate_sentence_transformer_embeddings([query_text], model)
+            # Generate embedding for query
+            if 'text-embedding' in model_name:
+                # OpenAI embedding
+                query_embedding = self.generate_openai_embeddings([query_text], model_name)
+            else:
+                # Sentence Transformer
+                model = self.models.get(model_name)
+                if not model:
+                    model = self.load_sentence_transformer(model_name)
+                    self.models[model_name] = model
+                query_embedding = self.generate_sentence_transformer_embeddings([query_text], model)
             
             if query_embedding is None:
                 return []
